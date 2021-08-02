@@ -9,7 +9,7 @@ import { HttpService } from 'src/app/services/http.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public sort: string | undefined;
+  public sort!: string;
   public games: Array<Game> | undefined
   constructor(private httpService: HttpService, private activatedRoute: ActivatedRoute) { }
 
